@@ -20,7 +20,7 @@ https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#5c
 
 
 ## EventManager_1 - stringified json parameters
-Use: Rename to "EventManager" and add to a GameObject in the scene.
+Use: Rename file to "EventManager" and add to a GameObject in the scene.
 
 This EventManager is capable of passing a string with its events. 
 You can pass anything as a string as long as both sides (dispatcher and listener) know the structure of the parameters.
@@ -43,7 +43,7 @@ The Bomb listens to the event of a hit by the blade, if it hit him then he react
 The main disadvantage of this solution is that every different type of event data requires a scriptable object.
 
 ## EventManager_2 - Dictionary <T> parameters
-Use: Rename to "EventManager" and add to a GameObject in the scene.
+Use: Rename file to "EventManager" and add to a GameObject in the scene.
 Credit to https://github.com/StavFaran92
 
 This EventManager is capable of passing a Dictionary with its events, where every key-value is <string, object>. 
@@ -61,3 +61,6 @@ The Cube listens to every click of the button and changes its color to the color
 <img  src="Images/Cube.png" width="700" >
 
 In my example I've got 2 buttons, 1 passing color "FF0000" (Red) and the other "0000FF" (Blue).
+
+
+* It's good practice not to have the actual event name string throughout the code, instead maintain const files with a static const variable of the event name. This way you're not prone to spelling mistakes and a change in the event name only requires changing it in the const file.
