@@ -2,7 +2,7 @@
 
 ## Intro
 
-Unity doesn't offer a built-in EventManger, it does thou offer **UnityEvent** - A generic argument persistent callback that can be saved with the Scene.
+Unity doesn't offer a built-in EventManger, it does thou offer a **UnityEvent** - A generic argument persistent callback that can be saved with the Scene.
 You can read more about them here:
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent_2.html
 
@@ -15,7 +15,7 @@ Here I'll go through the different EventMangers added in this project.
 The main difference is the type of data that is passed in the event, if at all.
 
 ## EventManager - No parameters
-Here's a link to an EventManager that passes no parameters with its events, this is perfect if you just want to inform other components that an action happened.
+Here's a link to an EventManager that passes no parameters with its events, this is perfect if you just want to inform other components that an action happened.    
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#5cf5960fedbc2a281acd21fa
 
 
