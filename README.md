@@ -20,6 +20,8 @@ https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#5c
 
 
 ## EventManager_1 - stringified json parameters
+Use: Rename to "EventManager" and add to a GameObject in the scene.
+
 This EventManager is capable of passing a string with its events. 
 You can pass anything as a string as long as both sides (dispatcher and listener) know the structure of the parameters.
 A very practical use for this is by serializing a scriptable object to a json string and passing it that way, on the other end we'll deserialize it back to a scriptable object.
@@ -41,9 +43,16 @@ The Bomb listens to the event of a hit by the blade, if it hit him then he react
 The main disadvantage of this solution is that every different type of event data requires a scriptable object.
 
 ## EventManager_2 - Dictionary <T> parameters
+Use: Rename to "EventManager" and add to a GameObject in the scene.
+Credit to https://github.com/StavFaran92
+
 This EventManager is capable of passing a Dictionary with its events, where every key-value is <string, object>. 
 This allows us to pass any parameters for any event and not have to maintain any limiting pre-defined structure.
 In this case, the listeners need to know the format and types of the parameters.
+
+The code of the EventManager_2 is under the "Scripts" folder. 
+
+Example:
 
 The button dispatches a color and a number every time it's pressed:
 <img  src="Images/Button.png" width="700" >
