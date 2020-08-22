@@ -30,10 +30,10 @@ The code of the EventManager_1 is under the "Scripts" folder.
 Example of uses:
 
 The scriptable object of the data passed in the event:
-<img  src="Images/BladeHitData.png" width="400" >
+<img  src="Images/BladeHitData.png" width="700" >
 
 The Blade dispatches an event with the BladeHitData for any collision with another object:
-<img  src="Images/Blade.png" width="400" >
+<img  src="Images/Blade.png" width="700" >
 
 The Bomb listens to the event of a hit by the blade, if it hit him then he reacts:
-<img  src="Images/Bomb.png" width="400" >
+<img  src="Images/Bomb.png" width="700" >
