@@ -58,7 +58,7 @@ The button dispatches a color and a number every time it's pressed:
 <img  src="Images/Button.png" width="700" >
 
 The Cube listens to every click of the button and changes its color to the color passed from the button.
-<img  src="Images/Cube.png" width="700" >
+<img  src="Images/Box.png" width="700" >
 
 In my example I've got 2 buttons, 1 passing color "FF0000" (Red) and the other "0000FF" (Blue).
 
