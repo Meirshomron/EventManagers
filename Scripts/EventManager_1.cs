@@ -52,8 +52,6 @@ public class EventManager : MonoBehaviour
     /// <param name="listener"> Callback action to be called on event. </param>
     public static void StartListening(string eventName, UnityAction<string> listener)
     {
-        //print("EventManager:StartListening eventName = " + eventName);
-
         ThisEvent thisEvent = null;
         if (Instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
@@ -74,8 +72,6 @@ public class EventManager : MonoBehaviour
     /// <param name="listener"> Callback action mapped to this event. </param>
     public static void StopListening(string eventName, UnityAction<string> listener)
     {
-        //print("EventManager:StopListening eventName = " + eventName);
-
         if (_instance == null) return;
         ThisEvent thisEvent = null;
         if (Instance.eventDictionary.TryGetValue(eventName, out thisEvent))
@@ -91,8 +87,6 @@ public class EventManager : MonoBehaviour
     /// <param name="json"> String json params to pass to all the callback actions mapped to this event. </param>
     public static void TriggerEvent(string eventName, string json)
     {
-        //print("EventManager:TriggerEvent eventName = " + eventName);
-
         ThisEvent thisEvent = null;
         if (Instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
