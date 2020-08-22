@@ -63,6 +63,7 @@ The Cube listens to every click of the button and changes its color to the color
 In my example I've got 2 buttons, 1 passing color "FF0000" (Red) and the other "0000FF" (Blue).
 
 
---
+
+
 
 * It's good practice not to have the actual event name string throughout the code, instead maintain const files with a static const variable of the event name. This way you're not prone to spelling mistakes and a change in the event name only requires changing it in the const file.
