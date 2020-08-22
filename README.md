@@ -43,7 +43,7 @@ The Bomb listens to the event of a hit by the blade, if it hit him then he react
 The main disadvantage of this solution is that every different type of event data requires a scriptable object.
 
 ## EventManager_2 - Dictionary <T> parameters
-Use: Rename file to "EventManager" and add to a GameObject in the scene.
+Use: Rename file to "EventManager" and add to a GameObject in the scene.  
 Credit to https://github.com/StavFaran92
 
 This EventManager is capable of passing a Dictionary with its events, where every key-value is <string, object>. 
